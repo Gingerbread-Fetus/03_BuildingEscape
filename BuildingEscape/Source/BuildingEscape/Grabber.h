@@ -16,6 +16,9 @@ public:
 	// Sets default values for this component's properties
 	UGrabber();
 
+private:
+	float Reach = 100.f;
+
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;

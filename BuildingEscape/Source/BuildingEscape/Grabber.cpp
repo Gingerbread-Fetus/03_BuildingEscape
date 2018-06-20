@@ -1,5 +1,6 @@
 // Copyright Ben Tristem 2016.
 
+#include "DrawDebugHelpers.h"
 #include "BuildingEscape.h"
 #include "Grabber.h"
 
@@ -40,8 +41,25 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 	);
 
 	// TODO: Log out to test
-	UE_LOG(LogTemp, Warning, TEXT("Player location: %s \n Rotation: %s"), *PlayerViewPointLocation.ToString(), *PlayerViewPointRotation.ToString());
-	//Ray-cast out ot reach distance
+	/*UE_LOG(LogTemp, Warning, TEXT("Player location: %s \n Rotation: %s"),
+		*PlayerViewPointLocation.ToString(),
+		*PlayerViewPointRotation.ToString());*/
+
+	FVector LineTraceEnd = PlayerViewPointLocation + PlayerViewPointRotation.Vector() * Reach;
+	
+	//Draw a red trace in the world to visualize
+	DrawDebugLine(
+		GetWorld(),
+		PlayerViewPointLocation,
+		LineTraceEnd,
+		FColor(255, 0, 0),
+		false,
+		0.f,
+		0.f,
+		10.0f
+	);
+
+	//Ray-cast out of reach distance
 
 	//See what we hit
 }
