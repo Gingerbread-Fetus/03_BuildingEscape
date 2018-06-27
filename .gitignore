@@ -76,3 +76,4 @@ Plugins/*/Intermediate/*
 # Cache files for the editor to use
 DerivedDataCache/*
 BuildingEscape/Content/StarterContent/
+BuildingEscape/Saved/Autosaves/Game/NewMap_BuiltData_Auto1.uasset

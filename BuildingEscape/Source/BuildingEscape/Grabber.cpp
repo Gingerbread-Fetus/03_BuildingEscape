@@ -1,8 +1,9 @@
 // Copyright Ben Tristem 2016.
-
-#include "DrawDebugHelpers.h"
 #include "BuildingEscape.h"
+#include "DrawDebugHelpers.h"
 #include "Grabber.h"
+
+
 
 #define OUT
 
@@ -59,8 +60,25 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 		10.0f
 	);
 
-	//Ray-cast out of reach distance
+	//Setup query parameters
+	FCollisionQueryParams TraceParameters(FName(TEXT("")), false, GetOwner());
+
+	FHitResult Hit;
+	//Line-trace (AKA ray-cast) out to reach distance
+	GetWorld()->LineTraceSingleByObjectType(
+		OUT Hit,
+		PlayerViewPointLocation,
+		LineTraceEnd,
+		FCollisionObjectQueryParams(ECollisionChannel::ECC_PhysicsBody),
+		TraceParameters
+	);
 
 	//See what we hit
+	AActor* ActorHit = Hit.GetActor();
+	if (ActorHit)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Line trace hit on: %s"),
+			*(ActorHit->GetName()));
+	}
 }
 
