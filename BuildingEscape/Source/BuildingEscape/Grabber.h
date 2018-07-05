@@ -24,6 +24,10 @@ public:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
+	void SetupInputComponent();
+
+	void FindPhysicsHandleComponent();
+
 private:
 	float Reach = 100.f;
 
@@ -33,4 +37,7 @@ private:
 	void Grab();
 
 	void Release();
+
+	//Return hit for first physics body in reach.
+	const FHitResult GetFirstPhysicsBodyInReach();
 };
