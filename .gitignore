@@ -77,3 +77,4 @@ Plugins/*/Intermediate/*
 DerivedDataCache/*
 BuildingEscape/Content/StarterContent/
 BuildingEscape/Saved/Autosaves/Game/NewMap_BuiltData_Auto1.uasset
+BuildingEscape/Saved/Config/CrashReportClient/
