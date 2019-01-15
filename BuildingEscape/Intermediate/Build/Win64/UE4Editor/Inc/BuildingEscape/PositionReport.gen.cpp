@@ -4,9 +4,9 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#include "GeneratedCppIncludes.h"
-#include "BuildingEscape.h"
-#include "PositionReport.h"
+#include "UObject/GeneratedCppIncludes.h"
+#include "BuildingEscape/BuildingEscape.h"
+#include "BuildingEscape/PositionReport.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -26,42 +26,51 @@ void EmptyLinkFunctionForGeneratedCodePositionReport() {}
 	{
 		return UPositionReport::StaticClass();
 	}
+	struct Z_Construct_UClass_UPositionReport_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UE4CodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UPositionReport_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UActorComponent,
+		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPositionReport_Statics::Class_MetaDataParams[] = {
+		{ "BlueprintSpawnableComponent", "" },
+		{ "ClassGroupNames", "Custom" },
+		{ "IncludePath", "PositionReport.h" },
+		{ "ModuleRelativePath", "PositionReport.h" },
+	};
+#endif
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UPositionReport_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UPositionReport>::IsAbstract,
+	};
+	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UPositionReport_Statics::ClassParams = {
+		&UPositionReport::StaticClass,
+		DependentSingletons, ARRAY_COUNT(DependentSingletons),
+		0x00B000A0u,
+		nullptr, 0,
+		nullptr, 0,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		nullptr, 0,
+		METADATA_PARAMS(Z_Construct_UClass_UPositionReport_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UPositionReport_Statics::Class_MetaDataParams))
+	};
 	UClass* Z_Construct_UClass_UPositionReport()
 	{
 		static UClass* OuterClass = nullptr;
 		if (!OuterClass)
 		{
-			static UObject* (*const DependentSingletons[])() = {
-				(UObject* (*)())Z_Construct_UClass_UActorComponent,
-				(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
-			};
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
-				{ "BlueprintSpawnableComponent", "" },
-				{ "ClassGroupNames", "Custom" },
-				{ "IncludePath", "PositionReport.h" },
-				{ "ModuleRelativePath", "PositionReport.h" },
-			};
-#endif
-			static const FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
-				TCppClassTypeTraits<UPositionReport>::IsAbstract,
-			};
-			static const UE4CodeGen_Private::FClassParams ClassParams = {
-				&UPositionReport::StaticClass,
-				DependentSingletons, ARRAY_COUNT(DependentSingletons),
-				0x00B00080u,
-				nullptr, 0,
-				nullptr, 0,
-				nullptr,
-				&StaticCppClassTypeInfo,
-				nullptr, 0,
-				METADATA_PARAMS(Class_MetaDataParams, ARRAY_COUNT(Class_MetaDataParams))
-			};
-			UE4CodeGen_Private::ConstructUClass(OuterClass, ClassParams);
+			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_UPositionReport_Statics::ClassParams);
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPositionReport, 3067592874);
+	IMPLEMENT_CLASS(UPositionReport, 305755753);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UPositionReport(Z_Construct_UClass_UPositionReport, &UPositionReport::StaticClass, TEXT("/Script/BuildingEscape"), TEXT("UPositionReport"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UPositionReport);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

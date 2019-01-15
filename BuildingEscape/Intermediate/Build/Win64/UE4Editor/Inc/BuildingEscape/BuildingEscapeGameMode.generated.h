@@ -4,8 +4,8 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#include "ObjectMacros.h"
-#include "ScriptMacros.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #ifdef BUILDINGESCAPE_BuildingEscapeGameMode_generated_h
@@ -18,21 +18,19 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define BuildingEscape_Source_BuildingEscape_BuildingEscapeGameMode_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABuildingEscapeGameMode(); \
-	friend BUILDINGESCAPE_API class UClass* Z_Construct_UClass_ABuildingEscapeGameMode(); \
+	friend struct Z_Construct_UClass_ABuildingEscapeGameMode_Statics; \
 public: \
-	DECLARE_CLASS(ABuildingEscapeGameMode, AGameMode, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), 0, TEXT("/Script/BuildingEscape"), NO_API) \
-	DECLARE_SERIALIZER(ABuildingEscapeGameMode) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(ABuildingEscapeGameMode, AGameMode, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
+	DECLARE_SERIALIZER(ABuildingEscapeGameMode)
 
 
 #define BuildingEscape_Source_BuildingEscape_BuildingEscapeGameMode_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesABuildingEscapeGameMode(); \
-	friend BUILDINGESCAPE_API class UClass* Z_Construct_UClass_ABuildingEscapeGameMode(); \
+	friend struct Z_Construct_UClass_ABuildingEscapeGameMode_Statics; \
 public: \
-	DECLARE_CLASS(ABuildingEscapeGameMode, AGameMode, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), 0, TEXT("/Script/BuildingEscape"), NO_API) \
-	DECLARE_SERIALIZER(ABuildingEscapeGameMode) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(ABuildingEscapeGameMode, AGameMode, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
+	DECLARE_SERIALIZER(ABuildingEscapeGameMode)
 
 
 #define BuildingEscape_Source_BuildingEscape_BuildingEscapeGameMode_h_14_STANDARD_CONSTRUCTORS \

@@ -4,8 +4,8 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#include "ObjectMacros.h"
-#include "ScriptMacros.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #ifdef BUILDINGESCAPE_PositionReport_generated_h
@@ -18,21 +18,19 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define BuildingEscape_Source_BuildingEscape_PositionReport_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUPositionReport(); \
-	friend BUILDINGESCAPE_API class UClass* Z_Construct_UClass_UPositionReport(); \
+	friend struct Z_Construct_UClass_UPositionReport_Statics; \
 public: \
-	DECLARE_CLASS(UPositionReport, UActorComponent, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/BuildingEscape"), NO_API) \
-	DECLARE_SERIALIZER(UPositionReport) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(UPositionReport, UActorComponent, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
+	DECLARE_SERIALIZER(UPositionReport)
 
 
 #define BuildingEscape_Source_BuildingEscape_PositionReport_h_12_INCLASS \
 private: \
 	static void StaticRegisterNativesUPositionReport(); \
-	friend BUILDINGESCAPE_API class UClass* Z_Construct_UClass_UPositionReport(); \
+	friend struct Z_Construct_UClass_UPositionReport_Statics; \
 public: \
-	DECLARE_CLASS(UPositionReport, UActorComponent, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/BuildingEscape"), NO_API) \
-	DECLARE_SERIALIZER(UPositionReport) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(UPositionReport, UActorComponent, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
+	DECLARE_SERIALIZER(UPositionReport)
 
 
 #define BuildingEscape_Source_BuildingEscape_PositionReport_h_12_STANDARD_CONSTRUCTORS \

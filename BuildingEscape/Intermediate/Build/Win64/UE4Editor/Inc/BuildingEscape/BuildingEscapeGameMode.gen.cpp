@@ -4,9 +4,9 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#include "GeneratedCppIncludes.h"
-#include "BuildingEscape.h"
-#include "BuildingEscapeGameMode.h"
+#include "UObject/GeneratedCppIncludes.h"
+#include "BuildingEscape/BuildingEscape.h"
+#include "BuildingEscape/BuildingEscapeGameMode.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -26,42 +26,51 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscapeGameMode() {}
 	{
 		return ABuildingEscapeGameMode::StaticClass();
 	}
+	struct Z_Construct_UClass_ABuildingEscapeGameMode_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UE4CodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_ABuildingEscapeGameMode_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_AGameMode,
+		(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABuildingEscapeGameMode_Statics::Class_MetaDataParams[] = {
+		{ "HideCategories", "Info Rendering MovementReplication Replication Actor Input Movement Collision Rendering Utilities|Transformation" },
+		{ "IncludePath", "BuildingEscapeGameMode.h" },
+		{ "ModuleRelativePath", "BuildingEscapeGameMode.h" },
+		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
+	};
+#endif
+	const FCppClassTypeInfoStatic Z_Construct_UClass_ABuildingEscapeGameMode_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<ABuildingEscapeGameMode>::IsAbstract,
+	};
+	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_ABuildingEscapeGameMode_Statics::ClassParams = {
+		&ABuildingEscapeGameMode::StaticClass,
+		DependentSingletons, ARRAY_COUNT(DependentSingletons),
+		0x009002ACu,
+		nullptr, 0,
+		nullptr, 0,
+		"Game",
+		&StaticCppClassTypeInfo,
+		nullptr, 0,
+		METADATA_PARAMS(Z_Construct_UClass_ABuildingEscapeGameMode_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_ABuildingEscapeGameMode_Statics::Class_MetaDataParams))
+	};
 	UClass* Z_Construct_UClass_ABuildingEscapeGameMode()
 	{
 		static UClass* OuterClass = nullptr;
 		if (!OuterClass)
 		{
-			static UObject* (*const DependentSingletons[])() = {
-				(UObject* (*)())Z_Construct_UClass_AGameMode,
-				(UObject* (*)())Z_Construct_UPackage__Script_BuildingEscape,
-			};
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
-				{ "HideCategories", "Info Rendering MovementReplication Replication Actor Input Movement Collision Rendering Utilities|Transformation" },
-				{ "IncludePath", "BuildingEscapeGameMode.h" },
-				{ "ModuleRelativePath", "BuildingEscapeGameMode.h" },
-				{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
-			};
-#endif
-			static const FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
-				TCppClassTypeTraits<ABuildingEscapeGameMode>::IsAbstract,
-			};
-			static const UE4CodeGen_Private::FClassParams ClassParams = {
-				&ABuildingEscapeGameMode::StaticClass,
-				DependentSingletons, ARRAY_COUNT(DependentSingletons),
-				0x0090028Cu,
-				nullptr, 0,
-				nullptr, 0,
-				"Game",
-				&StaticCppClassTypeInfo,
-				nullptr, 0,
-				METADATA_PARAMS(Class_MetaDataParams, ARRAY_COUNT(Class_MetaDataParams))
-			};
-			UE4CodeGen_Private::ConstructUClass(OuterClass, ClassParams);
+			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_ABuildingEscapeGameMode_Statics::ClassParams);
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABuildingEscapeGameMode, 3588090414);
+	IMPLEMENT_CLASS(ABuildingEscapeGameMode, 3946580699);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ABuildingEscapeGameMode(Z_Construct_UClass_ABuildingEscapeGameMode, &ABuildingEscapeGameMode::StaticClass, TEXT("/Script/BuildingEscape"), TEXT("ABuildingEscapeGameMode"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ABuildingEscapeGameMode);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
