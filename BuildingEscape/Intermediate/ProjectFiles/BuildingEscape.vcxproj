@@ -84,7 +84,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{6B546E07-D2CF-4478-AC12-D78F085B0F6F}</ProjectGuid>
+		<ProjectGuid>{FE0E27DA-CA15-4859-85BE-B40E87E7A0E4}</ProjectGuid>
 		<Keyword>MakeFileProj</Keyword>
 		<RootNamespace>BuildingEscape</RootNamespace>
 		<PlatformToolset>v141</PlatformToolset>

@@ -79,11 +79,12 @@ void UGrabber::Grab()
 	auto HitResult = GetFirstPhysicsBodyInReach();
 	auto ComponentToGrab = HitResult.GetComponent();
 	auto ActorHit = HitResult.GetActor();
-
+	if (!PhysicsHandle) { return; }
 	//If we hit something then attach a physics handle
 	//Attach physics handle
 	if (ActorHit)
 	{
+		
 		PhysicsHandle->GrabComponentAtLocationWithRotation(
 			ComponentToGrab,
 			NAME_None, // no bones needed
@@ -95,6 +96,7 @@ void UGrabber::Grab()
 
 void UGrabber::Release()
 {
+	if (!PhysicsHandle) { return; }
 	UE_LOG(LogTemp, Warning, TEXT("Grab released."));
 	// Release physics handle
 	PhysicsHandle->ReleaseComponent();
