@@ -5,7 +5,6 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "BuildingEscape/BuildingEscape.h"
 #include "BuildingEscape/BuildingEscapeGameMode.h"
 #ifdef _MSC_VER
 #pragma warning (push)
@@ -70,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscapeGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABuildingEscapeGameMode, 3946580699);
+	IMPLEMENT_CLASS(ABuildingEscapeGameMode, 1554400488);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ABuildingEscapeGameMode(Z_Construct_UClass_ABuildingEscapeGameMode, &ABuildingEscapeGameMode::StaticClass, TEXT("/Script/BuildingEscape"), TEXT("ABuildingEscapeGameMode"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ABuildingEscapeGameMode);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

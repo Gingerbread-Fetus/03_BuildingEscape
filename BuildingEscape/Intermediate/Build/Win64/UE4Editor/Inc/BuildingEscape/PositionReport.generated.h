@@ -20,7 +20,7 @@ private: \
 	static void StaticRegisterNativesUPositionReport(); \
 	friend struct Z_Construct_UClass_UPositionReport_Statics; \
 public: \
-	DECLARE_CLASS(UPositionReport, UActorComponent, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
+	DECLARE_CLASS(UPositionReport, UActorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
 	DECLARE_SERIALIZER(UPositionReport)
 
 
@@ -29,7 +29,7 @@ private: \
 	static void StaticRegisterNativesUPositionReport(); \
 	friend struct Z_Construct_UClass_UPositionReport_Statics; \
 public: \
-	DECLARE_CLASS(UPositionReport, UActorComponent, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
+	DECLARE_CLASS(UPositionReport, UActorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/BuildingEscape"), NO_API) \
 	DECLARE_SERIALIZER(UPositionReport)
 
 

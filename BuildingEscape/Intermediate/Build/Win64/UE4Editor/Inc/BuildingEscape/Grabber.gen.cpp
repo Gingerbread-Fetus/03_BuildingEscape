@@ -5,7 +5,6 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "BuildingEscape/BuildingEscape.h"
 #include "BuildingEscape/Grabber.h"
 #ifdef _MSC_VER
 #pragma warning (push)
@@ -53,10 +52,10 @@ void EmptyLinkFunctionForGeneratedCodeGrabber() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UGrabber_Statics::ClassParams = {
 		&UGrabber::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A0u,
+		0x00B000A4u,
 		nullptr, 0,
 		nullptr, 0,
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
 		METADATA_PARAMS(Z_Construct_UClass_UGrabber_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UGrabber_Statics::Class_MetaDataParams))
@@ -70,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeGrabber() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UGrabber, 2021561414);
+	IMPLEMENT_CLASS(UGrabber, 1101929129);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UGrabber(Z_Construct_UClass_UGrabber, &UGrabber::StaticClass, TEXT("/Script/BuildingEscape"), TEXT("UGrabber"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UGrabber);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

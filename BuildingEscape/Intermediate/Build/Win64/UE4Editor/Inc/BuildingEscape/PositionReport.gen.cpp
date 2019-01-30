@@ -5,7 +5,6 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "BuildingEscape/BuildingEscape.h"
 #include "BuildingEscape/PositionReport.h"
 #ifdef _MSC_VER
 #pragma warning (push)
@@ -53,10 +52,10 @@ void EmptyLinkFunctionForGeneratedCodePositionReport() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UPositionReport_Statics::ClassParams = {
 		&UPositionReport::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A0u,
+		0x00B000A4u,
 		nullptr, 0,
 		nullptr, 0,
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
 		METADATA_PARAMS(Z_Construct_UClass_UPositionReport_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UPositionReport_Statics::Class_MetaDataParams))
@@ -70,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodePositionReport() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPositionReport, 305755753);
+	IMPLEMENT_CLASS(UPositionReport, 3543070907);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UPositionReport(Z_Construct_UClass_UPositionReport, &UPositionReport::StaticClass, TEXT("/Script/BuildingEscape"), TEXT("UPositionReport"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UPositionReport);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
