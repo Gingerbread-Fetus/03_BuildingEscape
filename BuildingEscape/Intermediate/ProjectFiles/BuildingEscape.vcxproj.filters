@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\BuildingEscape.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{253B5E64-8E4B-408B-A69F-C2E2DB717B4E}</UniqueIdentifier>
+      <UniqueIdentifier>{771098F1-D9AC-43F9-8B78-8F7EFEDAA9BF}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\BuildingEscape.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{1FEF9CCA-9B00-4528-A253-F9230DE0E779}</UniqueIdentifier>
+      <UniqueIdentifier>{3DE51A08-CBDD-4018-A6B3-A4A8BAEDF86F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\BuildingEscape">
-      <UniqueIdentifier>{C6A6F25D-3374-427F-9F7C-D222DEE0B602}</UniqueIdentifier>
+      <UniqueIdentifier>{4E01BE77-D2EA-46E8-8BD0-F194B218528C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\BuildingEscape\BuildingEscape.Build.cs">
       <Filter>Source\BuildingEscape</Filter>
